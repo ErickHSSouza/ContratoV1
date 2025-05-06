@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contrato Automax - Contrato Varejo</title>
+
+    <link rel="stylesheet" href="/public/assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/public/assets/vendors/perfect-scrollbar/perfect-scrollbar.css"/>
+    <link rel="stylesheet" href="/public/assets/css/app.css"/>
+    <link rel="shortcut icon" href="/public/assets/images/favicon.svg" type="image/x-icon"/>
+    <script type="text/javascript">
+        function showContent() {
+            element = document.getElementById("content");
+            check = document.getElementById("check");
+            if (check.checked) {
+                element.style.display = 'block';
+            }
+            else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="Form1">
+        <!--div id="app">
+            <div id="sidebar" class='active'>
+                <div class="sidebar-wrapper active">
+                    <div class="sidebar-header">
+                        <img src="../Images/AutomaxLogo.png" class="w-100" alt="" srcset=""/>
+                    </div>
+                    <div class="sidebar-menu">
+                        <ul class="menu">
+                            <li class='sidebar-title'>Menu</li>
+                            <li class="sidebar-item" id="menuContratoVN">
+                                <a href="Index.aspx" class='sidebar-link'>
+                                    <i data-feather="file-text" width="20"></i>
+                                    <span>Contrato FIAT VN</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item active" id="menuContratoVD">
+                                <a href="Contratovd.aspx" class='sidebar-link'>
+                                    <i data-feather="file-text" width="20"></i>
+                                    <span>Contrato FIAT VD</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item" id="menuContratoE_commerce">
+                                <a href="Contratoecommerce.aspx" class='sidebar-link'>
+                                     <i data-feather="file-text" width="20"></i>
+                                <span>Contrato PEUGEOT-CITROEN VD</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item has-sub">
+                                <a href="#" class="sidebar-link">
+                                    <i data-feather="settings" width="20"></i>
+                                    <span>Configurações</span>
+                                </a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="ChangePassword.aspx">Mudar Senha</a>
+                                    </li>
+                                    <li>
+                                        <a href="Usuarios.aspx" id="MenuAdm1">Usuários</a>
+                                    </li>
+                                    <li>
+                                        <a href="ChangePassword.aspx" id="MenuAdm2">Modelos</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="Login.aspx" class='sidebar-link'>
+                                    <i data-feather="log-out" width="20"></i>
+                                    <span>Sair</span>
+                                </a>
+                            </li>
+                        </ul><-->
+                    </div>
+                    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+                </div>
+            </div>
+            <div id="main">
+                <nav class="navbar navbar-header navbar-expand navbar-light">
+                    <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+                    <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+
+                <div class="main-content container-fluid">
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-12 col-md-6 order-md-1 order-last">
+                                <h3>Contrato Vendas Diretas</h3>
+                                <p class="text-subtitle text-muted">Preencha os campos para continuar</p>
+                            </div>
+                            <div class="col-12 col-md-6 order-md-2 order-first">
+                                <nav aria-label="breadcrumb" class='breadcrumb-header'>
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">ContratoAutomax</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Contrato VD</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section id="multiple-column-form">
+                        <div class="row match-height">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-12 col-12">
+                                                    <div class="form-group">
+                                                        <label for="first-name-column">Vendedor</label>
+                                                        <input type="text" id="txbVendedor" class="form-control" placeholder="Vendedor" name="fname-column" required/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row match-height">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Dados do Cliente</h4>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-12 col-12">
+                                                    <div class="form-group">
+                                                        <label for="first-name-column">Cliente</label>
+                                                        <input type="text" id="txbCliente" class="form-control" placeholder="Cliente" name="fname-column" required/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-12">
+                                                    <div class="form-group">
+                                                        <label for="first-name-column">Razão Social</label>
+                                                        <input type="text" id="txbRazaoSocial" class="form-control" placeholder="Cliente" name="fname-column" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-12">
+                                                    <div class="form-group">
+                                                        <label for="city-column">Telefone</label>
+                                                        <input type="text" name="telefone" id="telefone1" class="form-control" placeholder="Telefone" maxlength="15" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 col-12">
+                                                    <div class="form-group">
+                                                        <label for="company-column">Email</label>
+                                                        <input type="email" id="txbEmail" class="form-control" name="company-column" placeholder="Email" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="company-column">CPF/CNPJ</label>
+                                                        <input type="text" id="txbCPFCNPJ" class="form-control" name="cpfcnpj" maxlength="14" placeholder="CPF/CNPJ" required/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="company-column">Inscrição Estadual</label>
+                                                        <input type="text" id="txbInscricao" class="form-control" name="company-column" placeholder="Inscrição Estadual" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                 <div class="col-md-3 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-colunm">CEP</label>                                                        
+                                                        <input name="cep" type="text" id="txbCEP" class="mascCEP form-control" value="" size="10" maxlength="9" placeholder="CEP" required/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Endereço</label>
+                                                        <input type="text" id="txbEndereco" class="form-control" name="email-id-column" placeholder="Endereço" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Número</label>
+                                                        <input type="text" id="txbNumero" class="form-control" name="email-id-column" placeholder="Número" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Bairro</label>
+                                                        <input type="text" id="txbBairro" class="form-control" name="email-id-column" placeholder="Bairro" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-colunm">Complemento</label>
+                                                        <input type="text" id="txbComplemento" class="form-control" name="email-id-colum" placeholder="Complemento" />
+                                                    </div>
+                                                </div>                                               
+                                                <div class="col-md-3 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Cidade</label>
+                                                        <input type="text" id="txbCidade" class="form-control" name="email-id-column" placeholder="Cidade" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Estado</label>
+                                                        <input type="text" id="txbEstado" class="form-control" name="email-id-column" placeholder="Estado" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Categoria</label>
+                                                        <input type="text" id="txbCategoria" class="form-control" name="email-id-column" placeholder="Categoria" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Desconto</label>
+                                                        <input type="text" id="txbDesconto" class="form-control" name="email-id-column" placeholder="Desconto (%)" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row match-height">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Dados do Veículo</h4>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-10 col-12">
+                                                    <div class="form-group">
+                                                        <label for="ddlModels">Veículo</label>
+                                                        <input type="text" id="ddlModels" class="form-control" placeholder="Digite o modelo do veículo" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-12">
+                                                    <div class="form-group">
+                                                        <label for="first-name-column">Qtde</label>
+                                                        <input type="number" id="txbQtde" class="form-control" placeholder="Qtde" min="0.00" max="9999" step="1" name="fname-column" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-12">
+                                                    <div class="form-group">
+                                                        <label for="first-name-column">Ano</label>
+                                                        <input type="number" id="txbAno" class="form-control" min="2020" max="2100" step="1" placeholder="Ano" name="fname-column" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-12">
+                                                    <div class="form-group">
+                                                        <label for="last-name-column">Modelo</label>
+                                                        <input type="number" id="txbModelo" class="form-control" min="2020" max="2100" step="1" placeholder="Modelo" name="lname-column" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="city-column">Cor</label>
+                                                        <input type="text" id="txbCor" class="form-control" placeholder="Cor" name="lname-column" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-12">
+                                                    <div class="form-group">
+                                                        <label for="company-column">Opcionais</label>
+                                                        <input type="text" id="txbOpcional" class="form-control" name="company-column" placeholder="Opcional..." />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-12">
+                                                    <div class="form-group">
+                                                        <label for="company-column">Cortesias</label>
+                                                        <input type="text" id="txbCortesia" class="form-control" name="company-column" placeholder="Cortesias..." />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Preço Público (R$)</label>
+                                                        <input type="text" id="txbPrecoPublico" class="form-control" placeholder="R$..." name="fname-column" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Preço Venda (R$)</label>
+                                                        <input type="text" id="txbPrecoVenda" class="form-control" placeholder="R$..." name="fname-column" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Data da Compra</label>
+                                                        <input type="date" id="txbDataCompra" class="form-control" name="email-id-column" placeholder="Prazo de Entrega" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Prazo de Entrega</label>
+                                                        <input type="number" id="txbPrazo" class="form-control" name="email-id-column" min="30" max="999" step="5" placeholder="Prazo de Entrega" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-12">
+                                                    <div class="form-group">
+                                                        <label for="txbLoja">Local de entrega</label>
+                                                        <select class="form-select" id="txbLoja" aria-label="Local de entrega">
+                                                            <option value="" selected disabled>Selecione o local de entrega</option>
+                                                            <option value="Automax Matriz - Av. Raja Gabáglia, 2222 - Estoril, Belo Horizonte - MG, 30494-170">Automax Matriz - Av. Raja Gabáglia, 2222 - Estoril, Belo Horizonte - MG, 30494-170</option>
+                                                            <option value="Automax Via Expressa - R. Padre Pedro Evangelista, 44 - Coração Eucarístico, Belo Horizonte - MG, 30535-490">Automax Via Expressa - R. Padre Pedro Evangelista, 44 - Coração Eucarístico, Belo Horizonte - MG, 30535-490</option>
+                                                            <option value="Max Veículos - Av. Barão Homem de Melo, 4350 - Estoril, Belo Horizonte - MG, 30455-610">Max Veículos - Av. Barão Homem de Melo, 4350 - Estoril, Belo Horizonte - MG, 30455-610</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Forma de Pagamento</label>
+                                                        <input type="text" id="txbPagamento" class="form-control" name="email-id-column" placeholder="Forma de Pagamento">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                
+                        <div class="row match-height">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">
+                                            <input type="checkbox" id="VeiculoSeminovo"/>&ensp; Dados do Veículo Semi Novo
+                                        </h4>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-4 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Placa</label>
+                                                        <input type="text" id="placaUsado" class="form-control" name="email-id-column" placeholder="Placa" >
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Valor Avaliação</label>
+                                                        <input type="text" id="valorAvaliacao" class="form-control" placeholder="R$..." name="fname-column" >
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-id-column">Data Avaliação</label>
+                                                        <input type="date" id="dtAvaliacao" class="form-control" name="email-id-column" placeholder="" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-md-12 col-12">
+                                <button type="button" id="btnContrato" class="btn btn-primary w-100" onclick="salvarDadosEGerarContrato()">Gerar Contrato</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <a id="PointA" name="PointA"></a>
+                <footer>
+                    <div class="footer clearfix mb-0 text-muted">
+                        <div class="float-start">
+                        </div>
+                        <div class="float-end">
+                            <p>2025 &copy; Grupo Automax</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function salvarDadosEGerarContrato() {
+
+             // Verificar se todos os campos obrigatórios estão preenchidos
+             if (!validarFormulario()) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+
+            // Coletar todos os dados do formulário
+            const formData = {
+                Vendedor: document.getElementById('txbVendedor').value,
+                Cliente: document.getElementById('txbCliente').value,
+                RazaoSocial: document.getElementById('txbRazaoSocial').value,
+                Telefone: document.getElementById('telefone1').value,
+                Email: document.getElementById('txbEmail').value,
+                CPFCNPJ: document.getElementById('txbCPFCNPJ').value,
+                Inscricao: document.getElementById('txbInscricao').value,
+                CEP: document.getElementById('txbCEP').value,
+                Endereco: document.getElementById('txbEndereco').value,
+                Numero: document.getElementById('txbNumero').value,
+                Bairro: document.getElementById('txbBairro').value,
+                Complemento: document.getElementById('txbComplemento').value,
+                Cidade: document.getElementById('txbCidade').value,
+                Estado: document.getElementById('txbEstado').value,
+                Categoria: document.getElementById('txbCategoria').value,
+                Desconto: document.getElementById('txbDesconto').value,
+                Modelo: document.getElementById('ddlModels').value,
+                Qtde: document.getElementById('txbQtde').value,
+                Ano: document.getElementById('txbAno').value,
+                ModeloAno: document.getElementById('txbModelo').value,
+                Cor: document.getElementById('txbCor').value,
+                Opcional: document.getElementById('txbOpcional').value,
+                Cortesia: document.getElementById('txbCortesia').value,
+                PrecoPublico: document.getElementById('txbPrecoPublico').value,
+                PrecoVenda: document.getElementById('txbPrecoVenda').value,
+                DataCompra: document.getElementById('txbDataCompra').value,
+                Prazo: document.getElementById('txbPrazo').value,
+                Loja: document.getElementById('txbLoja').value,
+                Pagamento: document.getElementById('txbPagamento').value,
+                PlacaUsado: document.getElementById('placaUsado').value,
+                ValorAvaliacao: document.getElementById('valorAvaliacao').value,
+                DataAvaliacao: document.getElementById('dtAvaliacao').value
+            };
+        
+            try {
+                // Salvar os dados no localStorage
+                localStorage.setItem('dadosContrato', JSON.stringify(formData));
+                
+                // Redirecionar para a página de contrato
+                window.location.href = 'ResultContratoVD.html';
+            } catch (e) {
+                console.error('Erro ao salvar dados:', e);
+                alert('Ocorreu um erro ao gerar o contrato. Por favor, tente novamente.');
+            }
+        }
+
+        function validarFormulario() {
+            // Lista de IDs dos campos obrigatórios
+            const camposObrigatorios = [
+                'txbVendedor', 'txbCliente', 'txbRazaoSocial', 'telefone1',
+                'txbEmail', 'txbCPFCNPJ', 'txbCEP', 'txbEndereco', 'txbNumero',
+                'txbBairro', 'txbCidade', 'txbEstado', 'txbCategoria', 'txbDesconto',
+                'ddlModels', 'txbQtde', 'txbAno', 'txbModelo', 'txbCor',
+                'txbPrecoPublico', 'txbPrecoVenda', 'txbDataCompra', 'txbPrazo'
+            ];
+
+            // Verificar cada campo obrigatório
+            for (const campoId of camposObrigatorios) {
+                const campo = document.getElementById(campoId);
+                if (!campo || !campo.value.trim()) {
+                    campo.focus();
+                    return false;
+                }
+            }
+
+            return true;
+        }
+        
+        </script>
+    <script src="/public/assets/js/feather-icons/feather.min.js"></script>
+    <script src="/public/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/public/assets/js/app.js"></script>
+    <script src="/public/assets/js/main.js"></script>
+
+    <script src="./public/Scripts/ValidaCampos.js"></script>
+</body>
+</html>

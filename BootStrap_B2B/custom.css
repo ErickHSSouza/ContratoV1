@@ -1,0 +1,302 @@
+.table-responsive {
+	overflow: auto;
+}
+
+.text {
+	font-weight: normal;
+}
+
+/* 
+** DOJO
+*/
+
+.dijitCheckBox, .dijitRadio, .dijitCheckBoxInput {
+	height: 22px !important;
+	width: 22px !important;
+	margin-right: 3px !important;
+	margin-top: -3px !important;
+}
+
+.dojoxGrid {
+	font-family: 'Source Sans Pro',sans-serif;
+}
+
+.dijitTextBox {border: solid black 1px; #overflow: hidden; vertical-align: middle;}
+
+.input-lg {
+	height: 32px !important;
+    padding: 0px 0px 0px 0px !important;
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    border-radius: 6px !important;
+}
+
+.label-input-lg {
+	height: 32px !important;
+	padding: 4px !important;
+	font-size: 18px !important;
+    line-height: 1.2 !important;
+    border-radius: 6px !important;
+    font-weight: normal !important;
+}
+
+/* 
+** SINALIZADORES
+*/
+
+.NoPrazo {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	font-weight: 600;
+	padding: 5px;
+	background-color: #00a65a;
+	color: #f9f9f9;
+	text-align: center;
+}
+
+.Urgente {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	font-weight: 600;
+	padding: 5px;
+	background-color: #f39c12;
+	color: #f9f9f9;
+	text-align: center;
+}
+
+.Atrasado {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	font-weight: 600;
+	padding: 5px;
+	background-color: #f56954;
+	color: #f9f9f9;
+	text-align: center;
+}
+
+.SemPrazo {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	font-weight: 600;
+	padding: 5px;
+	background-color: #0073b7;
+	color: #f9f9f9;
+	text-align: center;
+}
+
+/* 
+** TIMELINE HORIZONTAL
+*/
+
+.timeline-h {
+  margin: 50px 0;
+  padding: 0;
+  border-top: 2px solid #428bca;
+  list-style: none;
+}
+
+.timeline__step {
+  float: left;
+  width: 25%;
+  padding-top: 30px;
+  position: relative;
+}
+.timeline__step:first-of-type:before, .timeline__step:last-of-type:before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+.timeline__step:last-of-type:before {
+  left: 50%;
+}
+.timeline__step:hover .timeline__step-label {
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  height: auto;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-width: 1px;
+  bottom: 100%;
+}
+.timeline__step:hover .timeline__step-label:before, .timeline__step:hover .timeline__step-label:after {
+  display: block;
+}
+
+.timeline__step-label {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  font-size: 0;
+  border-width: 0;
+  -webkit-transform: rotate(30deg);
+  width: 110px;
+  margin: 0 0 45px -55px;
+  border-style: solid;
+  border-color: #428bca;
+  background: #fff;
+  font-weight: normal;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transition: bottom 0.1s ease-in-out, opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+.timeline__step-label:before, .timeline__step-label:after {
+  display: none;
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+.timeline__step-label:before {
+  border-top-color: #428bca;
+  border-width: 8px;
+  margin-left: -8px;
+}
+.timeline__step-label:after {
+  border-top-color: #fff;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.timeline__step-content {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.timeline__step-title {
+  display: block;
+  width: 100%;
+  padding: 30px 0 0;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.timeline__step-marker {
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  background: #fff;
+  border: 4px solid #428bca;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #fff;
+  text-align: center;
+  line-height: 50px -10;
+  color: #428bca;
+  font-size: 2em;
+  font-style: normal;
+  position: absolute;
+  top: -26px;
+  left: 50%;
+}
+.done .timeline__step-marker {
+  background: #428bca;
+  color: #fff;
+}
+
+.timeline__step-radio {
+  display: none;
+  /**
+   * not needed for now,
+   * because markers won't be clicked in horz version
+   */
+}
+
+.timeline--summary-h {
+  margin: 20px 0;
+  width: 200px;
+  border-width: 2px;
+}
+.timeline--summary-h .timeline__step-label {
+  margin-bottom: 19px;
+}
+.timeline--summary-h .timeline__step-title {
+  padding: 10px 0 0;
+  font-size: 8px;
+  font-weight: bold;
+}
+.timeline--summary-h .timeline__step-marker {
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  border-width: 2px;
+  text-indent: -999em;
+  box-shadow: 0 0 0 3px #fff;
+  top: -7px;
+}
+
+.dGrowl-main {position: fixed; max-height: 100%; overflow-y: auto; overflow-x: hidden; z-index: 1031;}
+
+.editPedido {
+  display: flex;
+  flex-direction: column;
+}
+#pedidoComercial_edit_codigoPedido {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: end;
+}
+.editPedido-tituloSecao {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+.editPedido-pesquisarDiv {
+  display: flex;
+  align-items: flex-end;
+  margin: 16px 0 0 -15px;
+}
+.editPedido-row {
+  display: flex;
+  margin-left: -15px;
+  align-items: flex-end;
+}
+.editPedido-documentacaoPendente {
+  display: flex;
+  margin-left: 16px;
+  margin-bottom: 15px;
+  height: 34px;
+  width: 136px;
+  background-color: rgba(242,136,47,0.18);
+}
+.editPedido-documentacaoPendente-icon {
+}
+.editPedido-documentacaoPendente-txt {
+  color: #DD7218;
+  font-size: 12px;
+  margin: auto;
+}
+.editPedido-flexibilizacao {
+  display: flex;
+  justify-content: flex-end;
+}
+.editPedido-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.editPedido-buttons-txt {
+  margin-left: 8px;
+}
+.editPedido-opcionais {
+  padding-top: 10px;
+}
+.editPedido-opcionais-fields {
+  margin-top: 16px;
+}
+.editPedido-opcionais .dijitReset {
+  text-align: center;
+}
