@@ -92,14 +92,14 @@
                     <div class="page-title">
                         <div class="row">
                             <div class="col-12 col-md-6 order-md-1 order-last">
-                                <h3>Contrato Vendas Diretas</h3>
+                                <h3>Autorização para entrega de veículos de Terceiro</h3>
                                 <p class="text-subtitle text-muted">Preencha os campos para continuar</p>
                             </div>
                             <div class="col-12 col-md-6 order-md-2 order-first">
                                 <nav aria-label="breadcrumb" class='breadcrumb-header'>
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="#">ContratoAutomax</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Contrato VD</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Autorização de Entrega de terceiro</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -107,24 +107,7 @@
                     </div>
 
                     <section id="multiple-column-form">
-                        <div class="row match-height">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-md-12 col-12">
-                                                    <div class="form-group">
-                                                        <label for="first-name-column">Vendedor</label>
-                                                        <input type="text" id="txbVendedor" class="form-control" placeholder="Vendedor" name="fname-column" required/>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
 
                         <div class="row match-height">
                             <div class="col-12">
@@ -137,51 +120,19 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-12">
                                                     <div class="form-group">
-                                                        <label for="first-name-column">Cliente</label>
-                                                        <input type="text" id="txbCliente" class="form-control" placeholder="Cliente" name="fname-column" required/>
+                                                        <label for="first-name-column">Cliente - Comprador</label>
+                                                        <input type="text" id="txbCliente" class="form-control" placeholder="Cliente " name="fname-column" required/>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12 col-12">
                                                     <div class="form-group">
-                                                        <label for="first-name-column">Razão Social</label>
-                                                        <input type="text" id="txbRazaoSocial" class="form-control" placeholder="Cliente" name="fname-column" required>
+                                                        <label for="first-name-column">CPF do comprador</label>
+                                                        <input type="text" id="txbCPFCliente" class="form-control" maxlength="14" placeholder="CPF do Comprador" name="fname-column" required>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12 col-12">
-                                                    <div class="form-group">
-                                                        <label for="city-column">Telefone</label>
-                                                        <input type="text" name="telefone" id="telefone1" class="form-control" placeholder="Telefone" maxlength="15" required />
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-12 col-12">
-                                                    <div class="form-group">
-                                                        <label for="company-column">Email</label>
-                                                        <input type="email" id="txbEmail" class="form-control" name="company-column" placeholder="Email" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="company-column">CPF/CNPJ</label>
-                                                        <input type="text" id="txbCPFCNPJ" class="form-control" name="cpfcnpj" maxlength="14" placeholder="CPF/CNPJ" required/>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="company-column">Inscrição Estadual</label>
-                                                        <input type="text" id="txbInscricao" class="form-control" name="company-column" placeholder="Inscrição Estadual" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-
+                                            </div> 
                                             <div class="row">
                                                  <div class="col-md-3 col-12">
                                                     <div class="form-group">
@@ -228,20 +179,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="email-id-column">Categoria</label>
-                                                        <input type="text" id="txbCategoria" class="form-control" name="email-id-column" placeholder="Categoria" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="email-id-column">Desconto</label>
-                                                        <input type="text" id="txbDesconto" class="form-control" name="email-id-column" placeholder="Desconto (%)" required>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -263,12 +200,7 @@
                                                         <input type="text" id="ddlModels" class="form-control" placeholder="Digite o modelo do veículo" required>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2 col-12">
-                                                    <div class="form-group">
-                                                        <label for="first-name-column">Qtde</label>
-                                                        <input type="number" id="txbQtde" class="form-control" placeholder="Qtde" min="0.00" max="9999" step="1" name="fname-column" required>
-                                                    </div>
-                                                </div>
+                                             
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-3 col-12">
@@ -291,43 +223,16 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-12 col-12">
+                                                  <div class="col-md-6 col-12">
                                                     <div class="form-group">
-                                                        <label for="company-column">Opcionais</label>
-                                                        <input type="text" id="txbOpcional" class="form-control" name="company-column" placeholder="Opcional..." />
+                                                        <label for="email-id-column">Nota Fiscal</label>
+                                                        <input type="number" id="txbNf" class="form-control" name="email-id-column" min="30" max="99999" step="8" placeholder="Numero da Nota Fiscal" required>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12 col-12">
-                                                    <div class="form-group">
-                                                        <label for="company-column">Cortesias</label>
-                                                        <input type="text" id="txbCortesia" class="form-control" name="company-column" placeholder="Cortesias..." />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="email-id-column">Preço Público (R$)</label>
-                                                        <input type="text" id="txbPrecoPublico" class="form-control" placeholder="R$..." name="fname-column" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="email-id-column">Preço Venda (R$)</label>
-                                                        <input type="text" id="txbPrecoVenda" class="form-control" placeholder="R$..." name="fname-column" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group">
                                                         <label for="email-id-column">Data da Compra</label>
                                                         <input type="date" id="txbDataCompra" class="form-control" name="email-id-column" placeholder="Prazo de Entrega" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="email-id-column">Prazo de Entrega</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -344,14 +249,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-12 col-12">
-                                                    <div class="form-group">
-                                                        <label for="email-id-column">Forma de Pagamento</label>
-                                                        <input type="text" id="txbPagamento" class="form-control" name="email-id-column" placeholder="Forma de Pagamento">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -363,7 +261,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <h4 class="card-title">
-                                            <input type="checkbox" id="VeiculoSeminovo"/>&ensp; Dados do Veículo Semi Novo
+                                             Dados da Pessoa que irá retirar o veículo
                                         </h4>
                                     </div>
                                     <div class="card-content">
@@ -371,22 +269,17 @@
                                             <div class="row">
                                                 <div class="col-md-4 col-12">
                                                     <div class="form-group">
-                                                        <label for="email-id-column">Placa</label>
-                                                        <input type="text" id="placaUsado" class="form-control" name="email-id-column" placeholder="Placa" >
+                                                        <label for="email-id-column">Nome </label>
+                                                        <input type="text" id="NomeTerceiro" class="form-control" name="NomeTerceiro" placeholder="Nome Terceiro" >
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 col-12">
                                                     <div class="form-group">
-                                                        <label for="email-id-column">Valor Avaliação</label>
-                                                        <input type="text" id="valorAvaliacao" class="form-control" placeholder="R$..." name="fname-column" >
+                                                        <label for="email-id-column">CPF</label>
+                                                        <input type="text" id="CPFTerceiro" class="form-control" placeholder="CPF Terceiro." name="fname-column" >
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 col-12">
-                                                    <div class="form-group">
-                                                        <label for="email-id-column">Data Avaliação</label>
-                                                        <input type="date" id="dtAvaliacao" class="form-control" name="email-id-column" placeholder="" disabled>
-                                                    </div>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -426,13 +319,9 @@
 
             // Coletar todos os dados do formulário
             const formData = {
-                Vendedor: document.getElementById('txbVendedor').value,
+            
                 Cliente: document.getElementById('txbCliente').value,
-                RazaoSocial: document.getElementById('txbRazaoSocial').value,
-                Telefone: document.getElementById('telefone1').value,
-                Email: document.getElementById('txbEmail').value,
-                CPFCNPJ: document.getElementById('txbCPFCNPJ').value,
-                Inscricao: document.getElementById('txbInscricao').value,
+                CPFCliente: document.getElementById('txbCPFCliente').value,        
                 CEP: document.getElementById('txbCEP').value,
                 Endereco: document.getElementById('txbEndereco').value,
                 Numero: document.getElementById('txbNumero').value,
@@ -443,20 +332,15 @@
                 Categoria: document.getElementById('txbCategoria').value,
                 Desconto: document.getElementById('txbDesconto').value,
                 Modelo: document.getElementById('ddlModels').value,
-                Qtde: document.getElementById('txbQtde').value,
                 Ano: document.getElementById('txbAno').value,
                 ModeloAno: document.getElementById('txbModelo').value,
                 Cor: document.getElementById('txbCor').value,
-                Opcional: document.getElementById('txbOpcional').value,
-                Cortesia: document.getElementById('txbCortesia').value,
-                PrecoPublico: document.getElementById('txbPrecoPublico').value,
-                PrecoVenda: document.getElementById('txbPrecoVenda').value,
                 DataCompra: document.getElementById('txbDataCompra').value,
                 Prazo: document.getElementById('txbPrazo').value,
                 Loja: document.getElementById('txbLoja').value,
-                Pagamento: document.getElementById('txbPagamento').value,
-                PlacaUsado: document.getElementById('placaUsado').value,
-                ValorAvaliacao: document.getElementById('valorAvaliacao').value,
+                NotaFiscal: document.getElementById('txbNf').value,
+                NomeTerceiro: document.getElementById('NomeTerceiro').value,
+                CPFTerceiro: document.getElementById('CPFTerceiro').value,
                 DataAvaliacao: document.getElementById('dtAvaliacao').value
             };
         
@@ -465,7 +349,7 @@
                 localStorage.setItem('dadosContrato', JSON.stringify(formData));
                 
                 // Redirecionar para a página de contrato
-                window.location.href = 'ResultContratoVD.html';
+                window.location.href = 'resultEntregaTerceiro.html';
             } catch (e) {
                 console.error('Erro ao salvar dados:', e);
                 alert('Ocorreu um erro ao gerar o contrato. Por favor, tente novamente.');
@@ -479,7 +363,8 @@
                 'txbEmail', 'txbCPFCNPJ', 'txbCEP', 'txbEndereco', 'txbNumero',
                 'txbBairro', 'txbCidade', 'txbEstado', 'txbCategoria', 'txbDesconto',
                 'ddlModels', 'txbQtde', 'txbAno', 'txbModelo', 'txbCor',
-                'txbPrecoPublico', 'txbPrecoVenda', 'txbDataCompra', 'txbPrazo'
+                'txbPrecoPublico', 'txbPrecoVenda', 'txbDataCompra', 'txbPrazo','txbLoja',
+                'txbNf', 'NomeTerceiro', 'CPFTerceiro', 'dtAvaliacao'
             ];
 
             // Verificar cada campo obrigatório

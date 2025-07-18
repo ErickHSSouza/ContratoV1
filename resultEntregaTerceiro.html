@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Contratos - Contrato VD</title>
+    <title>Autorização para entrega de veículos de Terceiro</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
 
@@ -51,29 +51,25 @@
             <div class="text-center mt-2 mb-2">
                 <img src="./public/assets/images/AutomaxLogo.png" class="img-fluid w-50 align-content-center" />
             </div>
-            <p class="fs-4"><strong>CONTRATO DE VENDAS DIRETAS</strong></p>
+            <p class="fs-4"><strong>Autorização para entrega de veículos de Terceiro</strong></p>
             <p> Belo Horizonte, <span id="lbDataAtual">[Data Atual]</span> </p>
-            <p><strong>Á</strong></p>
-            <p><strong>FCA FIAT CHRYSLER AUTOMOVEIS BRASIL LTDA </strong></p>
-            <p>Depto. de Vendas Diretas </p>
-            <p>Ref.: Contrato de compra e venda de veículos </p>
-            <div class="row border border-1 p-2" name="DadosCliente">
-                <p>Nome do Cliente: <span id="lbNomeCliente"> - </span></p>
-                <div class="row">
-                    <div class="col">
-                        <p>Categoria: <span id="lbCategoria"> - </span></p>
-                    </div>
-                    <div class="col">
-                        <p>Desconto: <span id="lbDesconto"> - </span> %</p>
-                    </div>
-                </div>
-                <p>Vendedor: <span id="lbVendedor"> - </span></p>
-            </div>
+            
             <br />
 
             <p>Prezados Senhores, </p>
-            <p>Pelo presente contrato, solicitamos o faturamento direto da fábrica do seguinte veículo:</p>
+            <p>Sr(a) <span id="lbNomeCliente"> </span> portador do CPF Nº <span id="lbCPFCliente"> </span> com endereço na cidade de <span id="lbCidade"> </span>, na</p>
+            <p><span id="lbEndereco"> </span>, Nº <span id="lbNumero"> </span>, Bairro <span id="lbBairro"> </span>, CEP <span id="lbCep"> </span>. Autoriza o </p>
+            <p>Sr(a) <span id="lbNomeTerceiro"> </span> portador do CPF <span id="lbCPFTerceiro"> </span>, Carteira de Identidade Nº a retirar na Sede </p>
+            <p><span id="lbLoja"> </span></p> o veiculo:
+            <p>Marca<span id="lbMarca"> </span> - Modelo <span id="lbModelo">  - Cor</span><span id="lbCor"></span> Ano <span id="lbAnoModelo"></span> da propriedade da Sr(a),</p>
+            <p>conforme descrito na Nota Fiscal nº <span id="lbNumeroNF"> </span> emitida <span id="lbDataCompra"> </span> pela </p>
+
+
             <p>Modelo: <span id="lbModelo"> - </span></p>
+
+
+
+
             <div class="mb-3">
                 <div class="row">
                     <div class="col">
@@ -224,7 +220,7 @@
             
             if (!dadosSalvos) {
                 alert('Dados do contrato não encontrados. Por favor, preencha o formulário novamente.');
-                window.location.href = 'index.html';
+                window.location.href = 'Contratovd.html';
                 return;
             }
 
@@ -250,7 +246,7 @@
                 // Preencher os dados do contrato
                 document.getElementById('lbDataAtual').textContent = formatarData(new Date());
                 document.getElementById('lbNomeCliente').textContent = formData.Cliente || ' - ';
-                document.getElementById('lbNomeCliente2').textContent = formData.Cliente || ' - ';
+                document.getElementById('lbNomeTerceiro').textContent = formData.ClienteTerceiro || ' - ';
                 document.getElementById('lbCategoria').textContent = formData.Categoria || ' - ';
                 document.getElementById('lbDesconto').textContent = formData.Desconto || ' - ';
                 document.getElementById('lbVendedor').textContent = formData.Vendedor || ' - ';
